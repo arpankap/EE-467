@@ -34,7 +34,7 @@ def get_torch_device():
 
 def flatten(it):
     """ Flatten iterable of iterables into an iterable of values. """
-    return (value for sub_it in it for value in sub_it)
+    return [value for sub_it in it for value in sub_it]
 
 def group_every(iterable, n_elem=1):
     """ Group every N elements into a list and yield that list. """
